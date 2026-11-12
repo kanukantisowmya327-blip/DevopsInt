@@ -1,0 +1,122 @@
+/* Reset and Base Typography */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+  color: #333333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Heading */
+h2 {
+  margin-bottom: 20px;
+  color: #1a1a1a;
+  font-size: 24px;
+}
+
+/* Form Card Container */
+form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+}
+
+/* Hide extra <br> tags from pure HTML so CSS controls spacing */
+form > br {
+  display: none;
+}
+
+form div {
+  margin-bottom: 16px;
+}
+
+/* Labels */
+label {
+  display: inline-block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #444444;
+}
+
+/* Text, Email, Phone, Date, Password & Select Inputs */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #fafafa;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+input:focus,
+select:focus {
+  border-color: #0066cc;
+  background-color: #ffffff;
+  outline: none;
+}
+
+/* Radio Buttons & Checkboxes */
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+  font-weight: normal;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+/* Buttons */
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button[type="submit"] {
+  background-color: #0066cc;
+  color: #ffffff;
+  width: 68%;
+  margin-right: 2%;
+}
+
+button[type="submit"]:hover {
+  background-color: #004c99;
+}
+
+button[type="reset"] {
+  background-color: #e4e6eb;
+  color: #333333;
+  width: 28%;
+}
+
+button[type="reset"]:hover {
+  background-color: #d0d3d9;
+}
